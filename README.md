@@ -13,6 +13,9 @@ This guide demonstrates how to build a distributed big data pipeline using Kafka
 
 https://youtu.be/ClpipMmyzYY
 
+### Public Github repo link
+https://github.com/KN2222/EEET2574-Assignment-1
+
 ### Prerequisites
 
 - Docker installed on your local machine.
@@ -236,7 +239,8 @@ Rebuild and apply the schema:
 
 ```bash
 docker-compose -f cassandra/docker-compose.yml up -d --build
-docker exec -it cassandra cqlsh -f /cassandra/schema-spacex.cql
+cqlsh -f schema-spacex.cql
+
 ```
 
 ### Step 2: Set Up Kafka Connect for SpaceX Data
