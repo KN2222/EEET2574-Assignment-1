@@ -7,19 +7,22 @@ Assignment 1: Data Pipeline with Docker
 
 ### Overview
 
-This guide demonstrates how to build a distributed big data pipeline using Kafka (for data streaming), Cassandra (as a NoSQL database), and Jupyter Lab (for data visualization) within Docker containers. The setup is designed to integrate multiple APIs (e.g., OpenWeatherMap, Twitter, Faker, and SpaceX APIs) to process and analyze data.
+This guide demonstrates how to build a distributed big data pipeline using Kafka , Cassandra, and Jupyter Lab within Docker containers. The setup is designed to integrate multiple APIs like OpenWeatherMap, Faker, and SpaceX APIs to process and analyze data.
 
 ### Presented Video
 
 https://youtu.be/ClpipMmyzYY
 
 ### Public Github repo link
+
 https://github.com/KN2222/EEET2574-Assignment-1
 
 ### Prerequisites
 
 - Docker installed on your local machine.
-- API keys for OpenWeatherMap.
+- API keys for OpenWeatherMap. [Open Weather Map](https://openweathermap.org/api)
+  <br>
+- API for SpaceX launches can be access here [SpaceX-API](https://github.com/r-spacex/SpaceX-API)
   <br>
   (Sample keys are provided, but they may be rate-limited if overused.)
 
@@ -511,4 +514,3 @@ Ho Chi Minh City shows higher humidity levels (around 60-68%) compared to Hanoi 
 
 Impact on Weather Quality:<br>
 Despite lower humidity in Hanoi, its higher pressure might lead to more stable weather conditions. On the other hand, Ho Chi Minh City's higher humidity could make it feel warmer and less comfortable.
-Wind Speed:
