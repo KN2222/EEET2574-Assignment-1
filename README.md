@@ -495,22 +495,26 @@ docker-compose -f data-vis/docker-compose.yml up -d
 
 ![Plot showing data trends](/asset/plot.png)
 
-1. Weather Records Comparison Between Two Cities
+1. Comparison of Weather Records Between Two Cities
 
-Key Observations:
-
-Consistency in Data:<br>
-Ho Chi Minh City's recorded temperatures exhibit minimal variation between temp, temp_max, and temp_min. This suggests consistent weather conditions during the data collection period.
-Hanoi also shows identical values for temp, temp_max, and temp_min throughout the dataset, which might indicate a lack of detailed temperature range measurements or simplified data reporting.
-Data Collection Quality:
-
-Overall Temperatures:<br>
-Ho Chi Minh City shows consistently higher temperatures (around 31-32°C) compared to Hanoi (around 19-20°C), reflecting the difference in climate between the tropical south and the temperate north of Vietnam. 2. Temperature - Humidity - Pressure Relations
+Consistency in Data:
+Ho Chi Minh City's recorded temperatures exhibit minimal variation between temp, temp_max, and temp_min. This suggests consistent weather conditions during the data collection period. Hanoi also shows identical values for temp, temp_max, and temp_min throughout the dataset, which might indicate a lack of detailed temperature range measurements or simplified data reporting. Ho Chi Minh City presents values of about 31-32°C, while Hanoi has about 19-20°C, which indicates the climatic difference between the tropical south and the temperate north of the country. 2. Temperature - Humidity - Pressure Relations
 
 2. Humidity vs. Pressure:
 
-Hanoi exhibits higher pressure values (around 1018 hPa) compared to Ho Chi Minh City (around 1007 hPa). This difference aligns with the city's location and its seasonal weather patterns.
-Ho Chi Minh City shows higher humidity levels (around 60-68%) compared to Hanoi (50-60%).
+Hanoi has a higher value of pressure of about 1018 hPa, whereas Ho Chi Minh City has about 1007 hPa. This is due to the city's position and seasonal weather conditions. Ho Chi Minh City is a bit more humid, with an average of 60-68%, while Hanoi has an average of 50-60%. Although the humidity is lower in Hanoi, its pressure is higher, which could make it more stable. Ho Chi Minh City is thus expected to feel warmer and less comfortable due to its higher humidity.
 
-Impact on Weather Quality:<br>
-Despite lower humidity in Hanoi, its higher pressure might lead to more stable weather conditions. On the other hand, Ho Chi Minh City's higher humidity could make it feel warmer and less comfortable.
+# Practical Implications of the Project
+
+1. Practical Problem
+   Nowadays, the ability to process and analyze enormous volumes of data in different formats in real time poses serious challenges for organizations. Such challenges are critical in sectors such as aerospace, where huge decisions depend on the amalgamation of multiple data streams from weather conditions, sentiment of the public, to technical parameters. For instance, a successful rocket launch depends on several levels of data observation to foresee hazards, evaluate public opinion, and respond to environmental conditions in real time. Understanding this real-time public sentiment on Twitter can be crucial for making strategic decisions in areas related to marketing or disaster management, among others.
+
+2. Solution through Big Data Analysis
+   This project addresses these challenges by leveraging Big Data technologies to process, store, and analyze large datasets in real time. Key components include:
+
+- Data Integration and Aggregation: The system will be able to collect real-time data from various sources, including but not limited to SpaceX launch data, Twitter sentiment, weather reports, and simulated scenarios to ensure a holistic view for decision-making.
+- Real-Time Insights and Automation: From a practical perspective, the project grants real-time insights, hence enabling rapid, informed organizational decisions with seamless data streaming with Apache Kafka and scalable, distributed storage in Cassandra.
+- Scalability and Efficiency: The system was developed to meet the demands for high-volume and high-velocity data in a consistent performance manner that makes the system ideal for very large industrial applications.
+
+3. Impact
+   From addressing high volume, velocity, and variety, this Big Data project demonstrates how real-time analytics can be applied to operational efficiency, risk management, and citizen engagement. Be it for aerospace, public safety, or customer relationships, this is the approach that enables organizations and businesses to transform complex data streams into truly usable, actionable insight.
